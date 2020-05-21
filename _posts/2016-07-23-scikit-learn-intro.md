@@ -120,18 +120,18 @@ with plt.xkcd():
 
 
 {% highlight python %}
-from sklearn.ensemble import RandomForestRegressor
-modelRFR = RandomForestRegressor()
-modelRFR.fit(X, y)
-print(modelRFR.score(X,y))
-# Plot the data and the model prediction
-X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
-y_fit = modelRFR.predict(X_fit)
+    from sklearn.ensemble import RandomForestRegressor
+    modelRFR = RandomForestRegressor()
+    modelRFR.fit(X, y)
+    print(modelRFR.score(X,y))
+    # Plot the data and the model prediction
+    X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
+    y_fit = modelRFR.predict(X_fit)
 
-with plt.xkcd():
-    plt.plot(X, y, 'o')
-    plt.plot(X_fit, y_fit)
-    plt.xticks([]), plt.yticks([])
+    with plt.xkcd():
+        plt.plot(X, y, 'o')
+        plt.plot(X_fit, y_fit)
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
 
     0.979352874072
@@ -145,20 +145,20 @@ with plt.xkcd():
 
 
 {% highlight python %}
-from sklearn.tree import DecisionTreeRegressor
+    from sklearn.tree import DecisionTreeRegressor
 
-modelDTR = DecisionTreeRegressor(max_depth=5)
-modelDTR.fit(X, y)
-print(modelDTR.score(X,y))
+    modelDTR = DecisionTreeRegressor(max_depth=5)
+    modelDTR.fit(X, y)
+    print(modelDTR.score(X,y))
 
-# Plot the data and the model prediction
-X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
-y_fit = modelDTR.predict(X_fit)
+    # Plot the data and the model prediction
+    X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
+    y_fit = modelDTR.predict(X_fit)
 
-with plt.xkcd():
-    plt.plot(X, y, 'o')
-    plt.plot(X_fit, y_fit)
-    plt.xticks([]), plt.yticks([])
+    with plt.xkcd():
+        plt.plot(X, y, 'o')
+        plt.plot(X_fit, y_fit)
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
 
     0.95832096062
@@ -172,21 +172,21 @@ with plt.xkcd():
 
 
 {% highlight python %}
-from sklearn.neighbors import KNeighborsRegressor
+    from sklearn.neighbors import KNeighborsRegressor
 
 
-modelKNN = KNeighborsRegressor(5)
-modelKNN.fit(X, y)
-print(modelKNN.score(X,y))
+    modelKNN = KNeighborsRegressor(5)
+    modelKNN.fit(X, y)
+    print(modelKNN.score(X,y))
 
-# Plot the data and the model prediction
-X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
-y_fit = modelKNN.predict(X_fit)
+    # Plot the data and the model prediction
+    X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
+    y_fit = modelKNN.predict(X_fit)
 
-with plt.xkcd():
-    plt.plot(X, y, 'o')
-    plt.plot(X_fit, y_fit);
-    plt.xticks([]), plt.yticks([])
+    with plt.xkcd():
+        plt.plot(X, y, 'o')
+        plt.plot(X_fit, y_fit);
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
     0.927674602007
 
@@ -199,21 +199,21 @@ with plt.xkcd():
 
 
 {% highlight python %}
-from sklearn.neural_network import MLPRegressor
+    from sklearn.neural_network import MLPRegressor
 
-modelMLP = MLPRegressor(solver='lbfgs', hidden_layer_sizes=100,
-                           max_iter=250, shuffle=True, random_state=1)
-modelMLP.fit(X, y)
-print(modelMLP.score(X,y))
+    modelMLP = MLPRegressor(solver='lbfgs', hidden_layer_sizes=100,
+                            max_iter=250, shuffle=True, random_state=1)
+    modelMLP.fit(X, y)
+    print(modelMLP.score(X,y))
 
-# Plot the data and the model prediction
-X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
-y_fit = modelMLP.predict(X_fit)
+    # Plot the data and the model prediction
+    X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
+    y_fit = modelMLP.predict(X_fit)
 
-with plt.xkcd():
-    plt.plot(X, y, 'o')
-    plt.plot(X_fit, y_fit);
-    plt.xticks([]), plt.yticks([])
+    with plt.xkcd():
+        plt.plot(X, y, 'o')
+        plt.plot(X_fit, y_fit);
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
     0.920154566012
 
@@ -226,19 +226,19 @@ with plt.xkcd():
 
 
 {% highlight python %}
-from sklearn.svm import SVR
-modelSVR = SVR(kernel='rbf', C=1e3, gamma=0.01)
-modelSVR.fit(X, y)
-print(modelSVR.score(X,y))
+    from sklearn.svm import SVR
+    modelSVR = SVR(kernel='rbf', C=1e3, gamma=0.01)
+    modelSVR.fit(X, y)
+    print(modelSVR.score(X,y))
 
-# Plot the data and the model prediction
-X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
-y_fit = modelSVR.predict(X_fit)
+    # Plot the data and the model prediction
+    X_fit = np.linspace(0, 10, 100)[:, np.newaxis]
+    y_fit = modelSVR.predict(X_fit)
 
-with plt.xkcd():
-    plt.plot(X, y, 'o')
-    plt.plot(X_fit, y_fit)
-    plt.xticks([]), plt.yticks([])
+    with plt.xkcd():
+        plt.plot(X, y, 'o')
+        plt.plot(X_fit, y_fit)
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
     0.915099262512
 
@@ -265,18 +265,18 @@ Principal Component Analysis is an unsupervised method for *dimensionality reduc
 
 
 {% highlight python %}
-from sklearn.decomposition import PCA
-pca = PCA(n_components=2)
-X, y = make_blobs(n_samples=400, centers=8,
-                  random_state=6, cluster_std=0.9)
-with plt.xkcd():
-    pca.fit(X)
-    plt.plot(X[:, 0], X[:, 1], 'o', alpha=0.5)
-    for length, vector in zip(pca.explained_variance_, pca.components_):
-        v = vector * 3 * np.sqrt(length)
-        plt.plot([0, v[0]], [0, v[1]], '-k', lw=3)
-        plt.axis('equal');
-        plt.xticks([]), plt.yticks([])
+    from sklearn.decomposition import PCA
+    pca = PCA(n_components=2)
+    X, y = make_blobs(n_samples=400, centers=8,
+                    random_state=6, cluster_std=0.9)
+    with plt.xkcd():
+        pca.fit(X)
+        plt.plot(X[:, 0], X[:, 1], 'o', alpha=0.5)
+        for length, vector in zip(pca.explained_variance_, pca.components_):
+            v = vector * 3 * np.sqrt(length)
+            plt.plot([0, v[0]], [0, v[1]], '-k', lw=3)
+            plt.axis('equal');
+            plt.xticks([]), plt.yticks([])
 
 {% endhighlight %}
 
@@ -289,17 +289,17 @@ The short vector or second principal component can be therefore ignored without 
 
 
 {% highlight python %}
-rv = PCA(0.65) # keep 65% of variance
-X_tr = rv.fit_transform(X)
-print(X.shape)
-print(X_trans.shape)
+    rv = PCA(0.65) # keep 65% of variance
+    X_tr = rv.fit_transform(X)
+    print(X.shape)
+    print(X_trans.shape)
 
-with plt.xkcd():
-    X_new = rv.inverse_transform(X_tr)
-    plt.plot(X[:, 0], X[:, 1], 'o', alpha=0.2)
-    plt.plot(X_new[:, 0], X_new[:, 1], 'ob', alpha=0.8)
-    plt.axis('equal');
-    plt.xticks([]), plt.yticks([])
+    with plt.xkcd():
+        X_new = rv.inverse_transform(X_tr)
+        plt.plot(X[:, 0], X[:, 1], 'o', alpha=0.2)
+        plt.plot(X_new[:, 0], X_new[:, 1], 'ob', alpha=0.8)
+        plt.axis('equal');
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
     (400, 2)
     (200, 1)
@@ -315,12 +315,12 @@ Choosing the number of components depends also on the application. Intuitively t
 
 
 {% highlight python %}
-pca = PCA().fit(X)
+    pca = PCA().fit(X)
 
-with plt.xkcd():
-    plt.plot(np.cumsum(pca.explained_variance_ratio_))
-    plt.xlabel('number of components')
-    plt.ylabel('cumulative explained variance');
+    with plt.xkcd():
+        plt.plot(np.cumsum(pca.explained_variance_ratio_))
+        plt.xlabel('number of components')
+        plt.ylabel('cumulative explained variance');
 {% endhighlight %}
 
 ![png](/assets/img/scikit-learn-intro/output_28_0.png)
@@ -334,12 +334,12 @@ Let's look at how K-Means operates on a simple cluster of 6 groups.
 
 
 {% highlight python %}
-from sklearn.datasets.samples_generator import make_blobs
-X, y = make_blobs(n_samples=200, centers=6,
-                  random_state=6, cluster_std=0.9)
-with plt.xkcd():
-    plt.scatter(X[:, 0], X[:, 1], s=50);
-    plt.xticks([]), plt.yticks([])
+    from sklearn.datasets.samples_generator import make_blobs
+    X, y = make_blobs(n_samples=200, centers=6,
+                    random_state=6, cluster_std=0.9)
+    with plt.xkcd():
+        plt.scatter(X[:, 0], X[:, 1], s=50);
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
 
 ![png](/assets/img/scikit-learn-intro/output_31_0.png)
@@ -349,14 +349,14 @@ with plt.xkcd():
 
 
 {% highlight python %}
-from sklearn.cluster import KMeans
-modelKMNS = KMeans(6)  # 6 clusters
-modelKMNS.fit(X)
-y_kmeans = modelKMNS.predict(X)
+    from sklearn.cluster import KMeans
+    modelKMNS = KMeans(6)  # 6 clusters
+    modelKMNS.fit(X)
+    y_kmeans = modelKMNS.predict(X)
 
-with plt.xkcd():
-    plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='rainbow');
-    plt.xticks([]), plt.yticks([])
+    with plt.xkcd():
+        plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='rainbow');
+        plt.xticks([]), plt.yticks([])
 {% endhighlight %}
 
 ![png](/assets/img/scikit-learn-intro/output_33_0.png)
@@ -369,45 +369,45 @@ Have you guessed the same clusters? 😃
 Now we will look at a higher dimensional example using the digits dataset included in scikit-learn. This dataset has 64 dimensions and we will try to reduce it to 2 so we can plot it. Dimensionality reduction is not only good for visualization, it also help in fitting better models.
 
 {% highlight python %}
-from sklearn import datasets
-from matplotlib import offsetbox
-from sklearn import manifold
+    from sklearn import datasets
+    from matplotlib import offsetbox
+    from sklearn import manifold
 
-digits = datasets.load_digits()
-X = digits.data
-y = digits.target
+    digits = datasets.load_digits()
+    X = digits.data
+    y = digits.target
 
-print(X.shape) # number of samples in number of dimensions
-print(y) # features
+    print(X.shape) # number of samples in number of dimensions
+    print(y) # features
 
-# Scale and visualize the embedding vectors
-def plot_embedding(X, title=None):
-    x_min, x_max = np.min(X, 0), np.max(X, 0)
-    X = (X - x_min) / (x_max - x_min)
+    # Scale and visualize the embedding vectors
+    def plot_embedding(X, title=None):
+        x_min, x_max = np.min(X, 0), np.max(X, 0)
+        X = (X - x_min) / (x_max - x_min)
 
-    plt.figure()
-    ax = plt.subplot(111)
-    for i in range(X.shape[0]):
-        plt.text(X[i, 0], X[i, 1], str(digits.target[i]),
-                 color=plt.cm.Set1(y[i] / 10.),
-                 fontdict={'weight': 'bold', 'size': 9})
-
-
-    # only print thumbnails with matplotlib > 1.0
-    shown_images = np.array([[1., 1.]])  # just something big
-    for i in range(digits.data.shape[0]):
-        dist = np.sum((X[i] - shown_images) ** 2, 1)
-        if np.min(dist) < 4e-3:
-            # don't show points that are too close
-            continue
-        shown_images = np.r_[shown_images, [X[i]]]
-        
-    plt.xticks([]), plt.yticks([])
-    plt.title(title)
+        plt.figure()
+        ax = plt.subplot(111)
+        for i in range(X.shape[0]):
+            plt.text(X[i, 0], X[i, 1], str(digits.target[i]),
+                    color=plt.cm.Set1(y[i] / 10.),
+                    fontdict={'weight': 'bold', 'size': 9})
 
 
-    (1797, 64)
-    [0 1 2 ..., 8 9 8]
+        # only print thumbnails with matplotlib > 1.0
+        shown_images = np.array([[1., 1.]])  # just something big
+        for i in range(digits.data.shape[0]):
+            dist = np.sum((X[i] - shown_images) ** 2, 1)
+            if np.min(dist) < 4e-3:
+                # don't show points that are too close
+                continue
+            shown_images = np.r_[shown_images, [X[i]]]
+            
+        plt.xticks([]), plt.yticks([])
+        plt.title(title)
+
+
+        (1797, 64)
+        [0 1 2 ..., 8 9 8]
 {% endhighlight %}
 
 ### PCA
@@ -416,13 +416,13 @@ Now that the dataset is loaded we can use PCA to reduce the dataset to 2 compone
 
 
 {% highlight python %}
-pca = PCA(n_components=2)
+    pca = PCA(n_components=2)
 
-X_pca = pca.fit_transform(X)
+    X_pca = pca.fit_transform(X)
 
-with plt.xkcd():
-    plot_embedding(X_pca, "PCA embedding of the digits")
-    plt.show()
+    with plt.xkcd():
+        plot_embedding(X_pca, "PCA embedding of the digits")
+        plt.show()
 {% endhighlight %}
 
 
