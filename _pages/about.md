@@ -3,13 +3,10 @@ title: About me
 layout: default
 ---
 
-<!-- Banner -->
 <div class="wrap">
-	<header class="major">
-		<h1>Hey 👋 I'm Jacopo!</h1>
-	</header>
+	<h1>Hey 👋 I'm Jacopo!</h1>
 	<h3>I'm a data scientist with 5+ years of experience,<br/> 
-	<a style="text-decoration: underline;" href="about_me.html">highly skilled</a> in machine learning, optimization and creative thinking.<br/> 
+	<a style="text-decoration: underline;" href="https://www.linkedin.com/in/jacopoparvizi">highly skilled</a> in machine learning, optimization and creative thinking.<br/> 
 	<br />
     <br />
     I love writing because I like to communicate with people. I write to express myself and my ideas. I write to understand technical topics: writing makes me see things in a clearer way. I write because I love what I do.
@@ -21,6 +18,5 @@ layout: default
     I also  <a style="text-decoration: underline;" target="_blank" href="https://soundcloud.com/jacopoparvizi">make music</a> and art.
 	<br />
 	Follow me on <a style="text-decoration: underline;" href="https://twitter.com/neuraloverflow" target="_blank">Twitter</a>.
-</div>
 
 
