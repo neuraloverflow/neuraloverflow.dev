@@ -20,4 +20,6 @@ I also [make music](https://soundcloud.com/jacopoparvizi) and art.
 
 Follow me on [Twitter](https://twitter.com/neuraloverflow).
 
+{% include section__about.html %}
+
 
