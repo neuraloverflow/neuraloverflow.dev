@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Made
+  site_title: NeuralOverflow
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -9,14 +9,16 @@ header_settings:
 menu_settings:
   menu_items:
     - title: 'Projects'
-      url: '/'
+      url: '/projects'
     - title: 'Blog'
-      url: '/blog/'
+      url: '/'
+    - title: 'Thanks'
+      url: '/thanks'
 
 footer_settings:
   logo_image: 
   logo_width: 100
-  tagline: A beautiful, minimal portfolio Jekyll theme
+  tagline: A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.
 
 hero_settings:
   background_image: /images/backgrounds/background-hero.svg
