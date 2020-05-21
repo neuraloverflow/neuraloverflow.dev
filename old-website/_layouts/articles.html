@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %} 
+    
+    
+    <!-- Main -->
+    <div id="main" class="alt">
+
+      <!-- One -->
+      <section id="one">
+	    <div class="inner">
+      {% for post in site.posts %}
+      {% if post.title != 404 %}
+        <header class="major">
+          <h2><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h2>
+          <p>{{ post.description }}</p>
+        </header>
+      {% endif %}
+      <!--<p>{{ post.content }}</p>-->
+      {% endfor %}
+	</div>
+      </section>
+
+    </div>
+
+    {% include newsletter.html %}
+    {% include footer.html %}
+
+  </body>
+
+</html>

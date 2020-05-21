@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 
 {% include head.html %}
@@ -14,22 +10,28 @@
     
     
 <!-- Main -->
-<div id="main" class="alt">
 
 <!-- One -->
 <section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
+	<div class="inner" style="text-align: center;text-transform: uppercase;text-decoration:aqua underline overline dashed; transform:rotate(-4deg);">
+		<h1>{{ page.title }}</h1>	
 		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p>{{ content }}</p>
+	</div>
+	<div class="card">
+		<div class="post">
+			<p>{{ content }}</p>
+		</div>	
+	</div>
+	<div class="inner">
+		{% include newsletter.html %}
+		{% include footer.html %}
 	</div>
 </section>
 
 </div>
-
-    {% include footer.html %}
+	
+	
+    
 
 </body>
 

@@ -1,36 +1,38 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: default
+---
+<div class="page-post">
 
-{% include head.html %}
+	<header class="post__header header--single">
+		
+		<div class="wrap">
+			<h1 class="post__title">{{ page.title }}</h1>
+			<time class="post__date label">{{ page.date | date_to_long_string }}</time>
+		</div>
 
-<body>
+		<img src="{{ page.featured_image | relative_url }}" class="post__featured-image">
 
-    {% include header.html %} 
-    
-    
-<!-- Main -->
-<div id="main" class="alt">
+	</header>
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p>{{ content }}</p>
-	</div>
-</section>
+	<section class="post-full">
+
+		<div class="wrap">
+
+			<article class="post__content {% if page.highlight_first %}highlight-first{% endif %}">
+				{{ page.content }}
+			</article>
+
+			<div class="post__more grid">
+				{% if page.previous.url %}
+				<a class="prev-post subtitle" href="{{ page.previous.url | relative_url }}">{{page.previous.title}}</a>
+				{% endif %}
+				{% if page.next.url %}
+				<a class="next-post subtitle" href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+				{% endif %}
+			</div>
+
+		</div>
+
+	</section>
 
 </div>
-
-    {% include footer.html %}
-
-</body>
-
-</html>

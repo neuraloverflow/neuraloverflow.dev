@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: default
+---
+<div class="page-post">
 
-{% include head.html %}
+	<header class="post__header header--single">
+		
+		<div class="wrap">
+			<h1 class="post__title">{{ page.title }}</h1>
+			<h2 class="post__subtitle subtitle--light">{{ page.subtitle }}</h2>
+		</div>
 
-<body>
+	</header>
 
-    {% include header.html %} {{ content }} {% include footer.html %}
+	<section class="post-full">
 
-</body>
+		<div class="wrap">
 
-</html>
+			<article class="post__content {% if page.highlight_first %}highlight-first{% endif %}">
+				{{ page.content }}
+			</article>
+
+		</div>
+
+	</section>
+
+</div>
