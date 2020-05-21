@@ -12,8 +12,8 @@ menu_settings:
       url: '/projects'
     - title: 'Blog'
       url: '/'
-    - title: 'Thanks'
-      url: '/thanks'
+    - title: 'About'
+      url: '/about'
 
 footer_settings:
   logo_image: 
@@ -27,15 +27,15 @@ post_settings:
   grid_spacing: 10
 
 contact_settings:
-  email_address: ''
-  form_action: 'https://formspree.io/hello@jekyllthemes.io'
+  email_address: 'jacopo dot parvizi at hm dot com'
+  form_action: 'https://formspree.io/xjvaglln'
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
   send_button_text: 'Get in Touch'
 
 social_settings:
   facebook_url: ''
-  twitter_url: ''
+  twitter_url: 'https://twitter.com/neuraloverflow'
   instagram_url: ''
   snapchat_url: ''
   youtube_url: ''
@@ -59,7 +59,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  linkedin_url: ''
+  linkedin_url: 'https://www.linkedin.com/in/jacopoparvizi/'
 
 color_settings:
   background_color: '#ffffff'
