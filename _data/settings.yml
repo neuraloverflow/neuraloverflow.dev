@@ -8,12 +8,14 @@ header_settings:
 
 menu_settings:
   menu_items:
+    - title: 'Home'
+      url: '/'
     - title: 'Blog'
       url: '/blog'
-    - title: 'Projects'
-      url: '/'
     - title: 'About'
       url: '/about'
+    - title: 'Now'
+      url: '/now'
 
 footer_settings:
   logo_image: 

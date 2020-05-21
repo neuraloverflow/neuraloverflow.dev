@@ -34,7 +34,7 @@ featured_image: /images/social.jpg
 			</header>
 
 			<div class="recent-posts__list grid">
-				{% for post in site.posts limit: 3 %}
+				{% for post in site.posts limit: 6 %}
 				{% include component__post-preview.html %}
 				{% endfor %}
 			</div>
@@ -42,7 +42,7 @@ featured_image: /images/social.jpg
 			<a href="{{ '/blog' | relative_url }}" class="action-bottom button--text--accent --right">All Posts</a>
 		</div>
 	</section>
-	
+
 	<section class="listing">
 		<div class="wrap">
 
