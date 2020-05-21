@@ -1,7 +1,7 @@
 site: NeuralOverflow
 
 url: http://neuraloverflow.dev
-baseurl: http://neuraloverflow.dev
+baseurl:
 
 collections:
   pages:
