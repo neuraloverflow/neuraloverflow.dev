@@ -12,10 +12,10 @@ menu_settings:
       url: '/'
     - title: 'Projects'
       url: '/projects'
-    - title: 'About'
-      url: '/about'
     - title: 'Now'
       url: '/now'
+    - title: 'About'
+      url: '/about'
 
 footer_settings:
   logo_image: 
